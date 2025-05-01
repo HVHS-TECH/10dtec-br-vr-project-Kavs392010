@@ -13,41 +13,98 @@
        <!-- Put this inside the <a-scene> -->
       <a-entity 
       ply-model="src:dog.ply"
-      position="0.537 1.329 -1.005"
+      position="0.537 1.511 -1.005"
       rotation="-88.968 -159.035 -66.023"
       ></a-entity>
       
       <a-entity 
       ply-model="src:vr project 7.ply"
-      position="-4.612 -6.264 -7.786"
+      position="-4.612 -6.069 -7.786"
       rotation="-90.000 -180.000 90.000"
       ></a-entity> 
 
       <a-entity 
       ply-model="src:alah- the owner.ply"
-      position="5.134 -1.869 9.206"
-      rotation="-88.184 -99.156 -50.885"
+      position="4.317 -1.710 9.202"
+      rotation="-89.805 -79.846 -48.887"
+      colour of the dress="black"
+      animation_rotation="
+                        property: rotation
+                        from: -89.805 -79.846 -48.887
+                        to: -89.852 136.080 -80.708
+                        dur: 10000;
+                        "
+     animation_position="
+                     property: position
+                     from: 4.317 -1.710 9.202
+                     to: 3.844 -1.845 10.792
+                     dur: 30000;
+                     from: 3.844 -1.845 10.792
+                     to: 3.844 -1.845 14.405
+                     from: 3.844 -1.845 14.405
+                     to: 10.294 -1.845 14.405
+                     "    
+      animation_rotation="
+                         property: rotation
+                         from: -89.852 136.080 -80.708
+                         to: -89.852 -102.443 -80.708
+                         dur: 1000;
+                         "     
+     animation_position="
+                         property: position
+                         from: 10.294 -1.845 14.405
+                         to: 10.294 -1.845 -3.134
+                         dur: 3000;
+                         "   
+     animation_rotation="
+                         property: rotation
+                         from: -89.852 136.080 -80.708
+                         to: -89.852 -7.680 -80.708
+                         dur: 1000;
+                         " 
+      animation_position="
+                         property: position
+                         from: 10.294 -1.845 -3.134
+                         to: 0.087 -1.845 -3.134
+                         dur: 5000;
+                         "
+     animation_rotation="
+                         property: rotation
+                         from: -89.852 136.080 -80.708
+                         to: -89.852 -104.512 -80.708
+                         dur: 1000;
+                         "   
+      animation_position="
+                         property: position
+                         from: 0.087 -1.845 -3.134
+                         to: 0.087 -1.845 -5.083
+                         dur: 2000;
+                         "       
+      animation_rotation="
+                         property: rotation
+                         from: -89.852 -104.512 -80.708
+                         to: -89.852 171.136 -80.708
+                         dur: 2000;
+                         "                                                            
+     animation_position="
+                        property: position
+                        from: 0.087 -1.845 -5.083
+                        to: 1.345 -1.845 -5.568
+                        dur: 10000;
+                        "
+      animation_rotation="
+                        property: rotation
+                       from: -89.852 171.136 -80.708
+                       to: -89.852 -10.215 -80.708
+                       dur: 1000;
+                       "
+      animation="
+               property: colour of the dress;
+               from: black
+               to: pink
+               dur: 10000;
+               "
       ></a-entity> 
-
-      <a-entity 
-      ply-model="src:rooms.ply"
-      position="-2.958 8.426 2.462"
-      rotation="-88.594 92.242 -92.453"
-      ></a-entity>   
-
-      <a-entity 
-      ply-model="src:stairs 1.ply"
-      position="-2.755 0.022 8.166"
-      rotation="-89.348 96.580 83.133"
-      scale="1.230 1.340 2.650"
-      ></a-entity>   
-
-      <a-entity 
-      ply-model="src:stairs 3.ply"
-      position="0.849 8.708 5.886"
-      rotation="-77.021 -78.881 -103.790"
-      scale="1.210 1.380 0.040"
-      ></a-entity>  
 
       <a-entity 
       ply-model="src:pool.ply"
@@ -55,6 +112,22 @@
       rotation="-88.951 -124.731 124.688"
       scale="1.350 0.940 1.690"
       ></a-entity>  
+
+      <a-entity 
+      ply-model="src:ground.ply"
+      position="-3.035 -0.090 5.174"
+      rotation="-89.539 0.765 -0.653"
+      scale="1.350 0.940 1.690"
+      ></a-entity>  
+
+      <a-entity 
+      ply-model="src:room.ply"
+      position="2.085 0.016 -6.738"
+      rotation="-88.486 120.419 149.770"
+      scale="1.350 0.940 1.690"
+      ></a-entity>  
+
+      
     </a-scene>
   </body>
 </html>
