@@ -9,8 +9,15 @@
     <body>
     <a-scene>
       <a-sky color="lightblue"></a-sky>
-      
-       <!-- Put this inside the <a-scene> -->
+        <a-entity ...your animations here...></a-entity>
+
+       <a-plane
+       color="green"
+       scale="30 30 30"
+       rotation="-90 0 0"
+       position="0 0 0"
+       ></a-plane>
+
       <a-entity 
       ply-model="src:dog.ply"
       position="0.537 1.511 -1.005"
@@ -23,90 +30,23 @@
       rotation="-90.000 -180.000 90.000"
       ></a-entity> 
 
-      <a-entity 
+      <a-entity
       ply-model="src:alah- the owner.ply"
-      position="4.317 -1.710 9.202"
-      rotation="-89.805 -79.846 -48.887"
-      colour of the dress="black"
-      animation_rotation="
-                        property: rotation
-                        from: -89.805 -79.846 -48.887
-                        to: -89.852 136.080 -80.708
-                        dur: 10000;
-                        "
-     animation_position="
-                     property: position
-                     from: 4.317 -1.710 9.202
-                     to: 3.844 -1.845 10.792
-                     dur: 30000;
-                     from: 3.844 -1.845 10.792
-                     to: 3.844 -1.845 14.405
-                     from: 3.844 -1.845 14.405
-                     to: 10.294 -1.845 14.405
-                     "    
-      animation_rotation="
-                         property: rotation
-                         from: -89.852 136.080 -80.708
-                         to: -89.852 -102.443 -80.708
-                         dur: 1000;
-                         "     
-     animation_position="
-                         property: position
-                         from: 10.294 -1.845 14.405
-                         to: 10.294 -1.845 -3.134
-                         dur: 3000;
-                         "   
-     animation_rotation="
-                         property: rotation
-                         from: -89.852 136.080 -80.708
-                         to: -89.852 -7.680 -80.708
-                         dur: 1000;
-                         " 
-      animation_position="
-                         property: position
-                         from: 10.294 -1.845 -3.134
-                         to: 0.087 -1.845 -3.134
-                         dur: 5000;
-                         "
-     animation_rotation="
-                         property: rotation
-                         from: -89.852 136.080 -80.708
-                         to: -89.852 -104.512 -80.708
-                         dur: 1000;
-                         "   
-      animation_position="
-                         property: position
-                         from: 0.087 -1.845 -3.134
-                         to: 0.087 -1.845 -5.083
-                         dur: 2000;
-                         "       
-      animation_rotation="
-                         property: rotation
-                         from: -89.852 -104.512 -80.708
-                         to: -89.852 171.136 -80.708
-                         dur: 2000;
-                         "                                                            
-     animation_position="
-                        property: position
-                        from: 0.087 -1.845 -5.083
-                        to: 1.345 -1.845 -5.568
-                        dur: 10000;
-                        "
-      animation_rotation="
-                        property: rotation
-                       from: -89.852 171.136 -80.708
-                       to: -89.852 -10.215 -80.708
-                       dur: 1000;
-                       "
-      animation="
-               property: colour of the dress;
-               from: black
-               to: pink
-               dur: 10000;
-               "
-      ></a-entity> 
-
-      <a-entity 
+      animation__step1="property: position; from: 4.317 -1.710 9.202; to: 3.844 -1.845 10.792; dur: 30000; begin: start;"
+      animation__step2="property: position; from: 3.844 -1.845 10.792; to: 3.844 -1.845 14.405; dur: 3000"
+      animation__step3="property: position; from: 3.844 -1.845 14.405; to: 10.294 -1.845 14.405; dur: 5000"
+      animation__rot1="property: rotation; from: -89.852 136.080 -80.708; to: -89.852 -102.443 -80.708; dur: 1000"
+      animation__step4="property: position; from: 10.294 -1.845 14.405; to: 10.294 -1.845 -3.134; dur: 3000"
+      animation__rot2="property: rotation; from: -89.852 136.080 -80.708; to: -89.852 -7.680 -80.708; dur: 1000"
+      animation__step5="property: position; from: 10.294 -1.845 -3.134; to: 0.087 -1.845 -3.134; dur: 5000"
+      animation__rot3="property: rotation; from: -89.852 136.080 -80.708; to: -89.852 -104.512 -80.708; dur: 1000"
+      animation__step6="property: position; from: 0.087 -1.845 -3.134; to: 0.087 -1.845 -5.083; dur: 2000"
+      animation__rot4="property: rotation; from: -89.852 -104.512 -80.708; to: -89.852 171.136 -80.708; dur: 2000"
+      animation__step7="property: position; from: 0.087 -1.845 -5.083; to: 1.345 -1.845 -5.568; dur: 10000"
+      animation__rot5="property: rotation; from: -89.852 171.136 -80.708; to: -89.852 -10.215 -80.708; dur: 1000"></a-entity>
+    
+  
+      <a-entity
       ply-model="src:pool.ply"
       position="-10.227 0.016 5.174"
       rotation="-88.951 -124.731 124.688"
@@ -123,8 +63,8 @@
       <a-entity 
       ply-model="src:room.ply"
       position="2.085 0.016 -6.738"
-      rotation="-88.486 120.419 149.770"
-      scale="1.350 0.940 1.690"
+      rotation="-88.816 120.419 149.770"
+      scale="1.360 1.390 1.810"
       ></a-entity>  
 
       
